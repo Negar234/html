@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: arial;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .active {
+            background-color: #00AF66;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        #container div div {
+            width: 100%;
+            height: 200px;
+            margin-top: 10px;
+            float: down;
+        }
+
+        #d1_left {
+            background-color: cadetblue;
+        }
+
+        #d1_right {
+            background-color: rgb(247, 242, 242);
+        }
+
+        #d2_right {
+            background-color: cadetblue;
+        }
+
+        #d2_left {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="../index.html" title="Hem">Hem</a></li>
+        <li><a href="../Projekt/Projekt.html" title=" Projekt">Projekt</a></li>
+        <li><a class="active" href="Fritidsintressen/Fritidsintressen.html"
+                title=" Fritidsintressen">Fritidsintressen</a></li>
+        <li><a href="../Personlighet/Personlighet.html" title=" Personlighet">Personlighet</a></li>
+    </ul>
+    <div id="container">
+
+        <div id="d1">
+            <div id="d1_left">
+                <span style="color: #100103 ; background-color: #00ffe5;font-weight:900; font-weight:bold " ;>Sport och
+                    fysisk
+                    aktivitet: </span>
+
+                Jag gillar att hålla mig aktiv och brukar spela badminton en gång i veckan med mina vänner. Det hjälper
+                mig att slappna av, fokusera bättre och utveckla laganda.
+
+                <span style="color: #100103 ; background-color: #00ffe5;font-weight:900; font-weight:bold " ;><br />
+                    <br />
+
+                    Läsning och lärande: </span>Jag är intresserad av att läsa tekniska böcker och artiklar för att
+                hålla mig uppdaterad om den senaste utvecklingen inom IT och systemutveckling.
+            </div>
+            <p id="d1_right">
+                <img src="../images/badminton.jpg" style="width:300px;height : 200px">
+                <img src="../images/bok.jpg" style="width:300px;height : 200px">
+                <img src="../images/bok2.jpg" style="width:300px;height : 200px">
+                <img src="../images/badminton2.jpg" style="width:300px;height : 200px">
+
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

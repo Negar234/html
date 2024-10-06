@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <title> Inlämning 1 </title>
+
+</head>
+<style>
+    body {
+        font-family: arial;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+        border-right: 1px solid #bbb;
+    }
+
+    li:last-child {
+        border-right: none;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .active {
+        background-color: #00AF66;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    #top_left {
+        width: 100%;
+        height: 180px;
+        background-color: bisque;
+        float: left;
+        padding-top: 20px;
+        padding-left: 5%;
+    }
+
+    #top_right {
+        width: 30%;
+        height: 200px;
+        background-color: rgb(255, 234, 0);
+        float: left;
+        text-align: center;
+    }
+
+    #top_right img {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    #down div {
+        width: 20%;
+        height: 200px;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+        margin-top: 20px;
+        background-color: #f1f8f5;
+        float: left;
+    }
+</style>
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="index/index.html" title=" Hem">Hem</a></li>
+        <li><a href="Fritidsintressen/Fritidsintressen.html" title=" Fritidsintressen">Fritidsintressen</a></li>
+        <li><a href="Projekt/Projekt.html" title=" Projekt">Projekt</a></li>
+        <li><a href="Personlighet/Personlighet.html" title=" Personlighet">Personlighet</a></li>
+    </ul>
+    <div id="container">
+        <div id="top">
+            <div id="top_left">
+                <table>
+                    <tr>
+                        <td><b>Namn:</b></td>
+                        <td>Negar</td>
+                    </tr>
+                    <tr>
+                        <td><b>Ålder:</b></td>
+                        <td>31 år</td>
+                    </tr>
+                    <tr>
+                        <td><b>Utbildning:</b></td>
+                        <td>Studerar systemutveckling</td>
+                    </tr>
+                    <tr>
+                        <td><b>Teknisk Bakgrund:</b></td>
+                        <td>Har studerat IT-teknologi i två år i hemlandet och ett år på EMU University i Cypern</td>
+                    </tr>
+                    <tr>
+                        <td><b>Fritidsintressen:</b></td>
+                        <td>Programmering, sport och läsning</td>
+                    </tr>
+                </table>
+            </div>
+
+            <p>
+                <img src="images/dator3.jpg" style="width:900px;height : 500px">
+                <img src="images/dator.jpg" style="width:500px;height : 500px">
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

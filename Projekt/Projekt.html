@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: arial;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .active {
+            background-color: #00AF66;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        #container div div {
+            width: 50%;
+            height: 200px;
+            margin-top: 10px;
+            float: left;
+        }
+
+        #d1_left {
+            background-color: cadetblue;
+        }
+
+        #d1_right {
+            background-color: #073e79;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="../index.html" title="Hem">Hem</a></li>
+        <li><a href="../Fritidsintressen/Fritidsintressen.html" title=" Fritidsintressen">Fritidsintressen</a></li>
+        <li><a class="active" href="Projekt/Projekt.html" title=" Projekt">Projekt</a></li>
+        <li><a href="../Personlighet/Personlighet.html" title=" Personlighet">Personlighet</a></li>
+    </ul>
+    <div id="container">
+        <div id="d1">
+            <div id="d1_left">
+                Jag har arbetat med flera intressanta projekt inom systemutveckling och IT-teknik, där jag har fått
+                använda olika programmeringsspråk och tekniker. Här är en sammanfattning av några av de projekt jag har
+                arbetat tidigare:
+                Candy Crush-spel,
+                Automatisk Kaffemaskin och
+                Fjärrstyrd Bil.
+                Genom dessa projekt har jag demonstrerat:
+
+                Starka programmeringskunskaper i C++: jag har använt C++ för att bygga komplexa projekt, från
+                spelutveckling till hårdvarustyrning.
+                Erfarenhet av mjukvara och hårdvara: Jag har inte bara arbetat med kod utan också förstått hur den
+                interagerar med hårdvara, vilket är en mycket värdefull kompetens inom systemutveckling.
+                Problemlösning och kreativt tänkande: Jag har löst problem som involverar integration av mjukvara och
+                hårdvara, implementerat spelmekanik och byggt funktioner för användarinteraktion.
+            </div>
+            <div id="d1_right">
+                <img src="../images/candy.jpg" style="width:500px;height : 200px">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
