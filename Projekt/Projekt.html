@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <link rel="icon" type="image/x-icon" href="../images/negar-logo.png" sizes="32*32">
     <style>
         body {
             font-family: arial;
@@ -40,49 +41,146 @@
         }
 
         #container div div {
-            width: 50%;
+            width: 100%;
             height: 200px;
             margin-top: 10px;
             float: left;
         }
 
         #d1_left {
-            background-color: cadetblue;
+            background-color: rgb(241, 192, 142);
+            font-weight: bold;
+            text-align: center;
+            color: rgb(138, 65, 6);
+            font-size: 20px;
         }
 
         #d1_right {
-            background-color: #073e79;
+            background-color: #fcfcfc;
+        }
+
+        #d1 h1.header {
+
+            height: 100px;
+            margin: 0 auto 0;
+            background-color: #befff6;
+            position: relative;
+            text-align: center;
+            color: rgb(94, 0, 128);
+            font-weight: bold;
+            font-size: 34pt;
+        }
+
+        #d1 p.header {
+
+            height: 100px;
+            margin: 0 auto 0;
+            background-color: #f4ffbe;
+            position: relative;
+            text-align: left;
+            color: #006980;
+            font-weight: bold;
+            font-size: 34pt;
+        }
+
+        #d1 div.header {
+
+            height: 400px;
+
+            margin: 10px;
+            background-color: #f6ffbe;
+            position: relative;
+            text-align: left;
+            color: #008080;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        #d1 div.header2 {
+
+            height: 50px;
+
+            margin: 10px;
+            background-color: #f0c2db;
+            position: relative;
+            text-align: center;
+            color: #513472;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        #logoContainer img {
+            width: 60px;
+            height: 60px;
+            left: 90%;
+            top: -55px;
+            position: relative;
+            animation: logoAnimation 7s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes logoAnimation {
+            from {}
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #navigator_bar {
+            background-color: #333;
+            height: 40px;
         }
     </style>
 </head>
 
 <body>
-    <ul>
-        <li><a href="../index.html" title="Hem">Hem</a></li>
-        <li><a href="../Fritidsintressen/Fritidsintressen.html" title=" Fritidsintressen">Fritidsintressen</a></li>
-        <li><a class="active" href="Projekt/Projekt.html" title=" Projekt">Projekt</a></li>
-        <li><a href="../Personlighet/Personlighet.html" title=" Personlighet">Personlighet</a></li>
-    </ul>
+    <div id="navigator_bar">
+        <ul>
+            <li><a href="../index.html" title="Hem">Hem</a></li>
+            <li><a href="../Fritidsintressen/Fritidsintressen.html" title=" Fritidsintressen">Fritidsintressen</a></li>
+            <li><a class="active" href="Projekt/Projekt.html" title=" Projekt">Projekt</a></li>
+            <li><a href="../Personlighet/Personlighet.html" title=" Personlighet">Personlighet</a></li>
+        </ul>
+        <span id="logoContainer">
+            <img src="../images/negar-logo.png" />
+        </span>
+    </div>
     <div id="container">
         <div id="d1">
-            <div id="d1_left">
-                Jag har arbetat med flera intressanta projekt inom systemutveckling och IT-teknik, där jag har fått
-                använda olika programmeringsspråk och tekniker. Här är en sammanfattning av några av de projekt jag har
-                arbetat tidigare:
-                Candy Crush-spel,
-                Automatisk Kaffemaskin och
-                Fjärrstyrd Bil.
-                Genom dessa projekt har jag demonstrerat:
+            <h1 class="header"> Systemutvecklingsprojekt </h1>
+            <div class="header"> Jag har arbetat med flera intressanta projekt inom systemutveckling och IT-teknik, där
+                jag har fått
+                använda olika programmeringsspråk och tekniker. <br>Genom dessa projekt har jag demonstrerat:<br><br>
 
-                Starka programmeringskunskaper i C++: jag har använt C++ för att bygga komplexa projekt, från
-                spelutveckling till hårdvarustyrning.
-                Erfarenhet av mjukvara och hårdvara: Jag har inte bara arbetat med kod utan också förstått hur den
-                interagerar med hårdvara, vilket är en mycket värdefull kompetens inom systemutveckling.
-                Problemlösning och kreativt tänkande: Jag har löst problem som involverar integration av mjukvara och
+                <span style="background-color: #6cef5abe">Starka programmeringskunskaper i C++: </span><br>jag har
+                använt
+                C++
+                för att bygga komplexa projekt, från
+                spelutveckling till hårdvarustyrning.<br><br>
+                <span style="background-color: #45e3b6">Erfarenhet av mjukvara och hårdvara: </span><br>Jag har inte
+                bara arbetat med kod utan också förstått hur den
+                interagerar med hårdvara, vilket är en mycket värdefull kompetens inom systemutveckling.<br><br>
+                <span style="background-color: #e5c227">Problemlösning och kreativt tänkande: </span><br>Jag har löst
+                problem som involverar integration av mjukvara
+                och
                 hårdvara, implementerat spelmekanik och byggt funktioner för användarinteraktion.
             </div>
+            <div class="header2">Här är några av de projekt jag har
+                arbetat tidigare:
+            </div>
+            <div id="d1_left">
+
+                Candy Crush-spel<br>
+                Fjärrstyrd Bil<br>
+                Automatisk Varumaskin
+
+            </div>
             <div id="d1_right">
-                <img src="../images/candy.jpg" style="width:500px;height : 200px">
+                <img src="../images/candy.jpg" style="width:500px;height : 300px">
+                <img src="../images/bil.jpg" style="width:400px;height : 400px">
+                <img src="../images/varor.jpg" style="width:400px;height : 400px">
+
             </div>
         </div>
     </div>

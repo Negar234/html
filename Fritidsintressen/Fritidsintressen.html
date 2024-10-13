@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <link rel="icon" type="image/x-icon" href="../images/negar-logo.png" sizes="32*32">
     <style>
         body {
             font-family: arial;
@@ -10,8 +11,9 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
-            background-color: #333;
+            height: 40px;
             overflow: hidden;
+            float: left;
         }
 
         li {
@@ -47,11 +49,28 @@
         }
 
         #d1_left {
-            background-color: cadetblue;
+            background-image: url('../images/hobby.png');
+            background-size: 100% 100%;
+            height: 500px !important;
+        }
+
+        #d1_left .title {
+            height: 50px;
+            margin: 0 auto 0;
+            background-color: #BEC8FF;
+            width: 900px;
+            border-radius: 20px;
+            top: 220px;
+            position: relative;
+            text-align: center;
+            color: purple;
+            font-weight: bold;
+            font-size: 34pt;
         }
 
         #d1_right {
-            background-color: rgb(247, 242, 242);
+            margin: 0 auto 0;
+            width: 90% !important;
         }
 
         #d2_right {
@@ -61,42 +80,189 @@
         #d2_left {
             background-color: chocolate;
         }
+
+        .frame {
+            width: 400px;
+            height: 279px;
+
+        }
+
+
+        #p1 {
+            background-image: url('../images/badminton.jpg');
+
+        }
+
+        #p2 {
+            background-image: url('../images/bok.jpg');
+
+        }
+
+        #p3 {
+            background-image: url('../images/go kart.jpg');
+
+        }
+
+        #d1_right div img.frame {
+            background-size: 330px 210px;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        #d1_right div:first-child {
+
+            margin-left: 0px;
+        }
+
+        #d1_right div {
+            width: auto !important;
+            height: auto !important;
+            float: left;
+            margin-left: 0.5%;
+
+        }
+
+        #d1_right div h2.header {
+
+
+            height: 30px !important;
+            text-align: center;
+            width: 70% !important;
+
+            border-left: none !important;
+            display: block;
+            padding: 10px;
+
+            left: 10px;
+            position: relative;
+        }
+
+        #d1_right #f1 h2.header {
+            background-color: #79d15b;
+            outline: 10px solid #1f5c2a;
+            border: 5px dashed rgb(85, 135, 77);
+            color: rgb(13, 1, 1);
+
+        }
+
+        #d1_right #f2 h2.header {
+            background-color: #afa558;
+            outline: 10px solid #8b700f;
+            border: 5px dashed rgb(76, 64, 3);
+            color: rgb(13, 1, 1);
+        }
+
+        #d1_right #f3 h2.header {
+            background-color: rgb(99, 170, 228);
+            outline: 10px solid rgb(12, 61, 90);
+            border: 5px dashed rgb(33, 104, 133);
+            color: rgb(13, 1, 1);
+        }
+
+        #d1_right div p.bodyText {
+            padding: 20px;
+        }
+
+        #f1 {
+            background-color: rgb(163, 214, 190);
+        }
+
+        #f2 {
+            background-color: rgb(212, 205, 166);
+        }
+
+        #f3 {
+            background-color: rgb(191, 228, 232);
+        }
+
+        #logoContainer img {
+            width: 60px;
+            height: 60px;
+            left: 65%;
+            top: -10px;
+            position: relative;
+            animation: logoAnimation 7s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes logoAnimation {
+            from {}
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #navigator_bar {
+            background-color: #333;
+            height: 40px;
+        }
     </style>
 </head>
 
 <body>
-    <ul>
-        <li><a href="../index.html" title="Hem">Hem</a></li>
-        <li><a href="../Projekt/Projekt.html" title=" Projekt">Projekt</a></li>
-        <li><a class="active" href="Fritidsintressen/Fritidsintressen.html"
-                title=" Fritidsintressen">Fritidsintressen</a></li>
-        <li><a href="../Personlighet/Personlighet.html" title=" Personlighet">Personlighet</a></li>
-    </ul>
+    <div id="navigator_bar">
+        <ul>
+            <li><a href="../index.html" title="Hem">Hem</a></li>
+            <li><a href="../Projekt/Projekt.html" title=" Projekt">Projekt</a></li>
+            <li><a class="active" href="Fritidsintressen/Fritidsintressen.html"
+                    title=" Fritidsintressen">Fritidsintressen</a></li>
+            <li><a href="../Personlighet/Personlighet.html" title=" Personlighet">Personlighet</a></li>
+        </ul>
+        <span id="logoContainer">
+            <img src="../images/negar-logo.png" />
+        </span>
+    </div>
+
     <div id="container">
 
         <div id="d1">
             <div id="d1_left">
-                <span style="color: #100103 ; background-color: #00ffe5;font-weight:900; font-weight:bold " ;>Sport och
-                    fysisk
-                    aktivitet: </span>
-
-                Jag gillar att hålla mig aktiv och brukar spela badminton en gång i veckan med mina vänner. Det hjälper
-                mig att slappna av, fokusera bättre och utveckla laganda.
-
-                <span style="color: #100103 ; background-color: #00ffe5;font-weight:900; font-weight:bold " ;><br />
-                    <br />
-
-                    Läsning och lärande: </span>Jag är intresserad av att läsa tekniska böcker och artiklar för att
-                hålla mig uppdaterad om den senaste utvecklingen inom IT och systemutveckling.
+                <div class="title">My Hobbies</div>
             </div>
-            <p id="d1_right">
-                <img src="../images/badminton.jpg" style="width:300px;height : 200px">
-                <img src="../images/bok.jpg" style="width:300px;height : 200px">
-                <img src="../images/bok2.jpg" style="width:300px;height : 200px">
-                <img src="../images/badminton2.jpg" style="width:300px;height : 200px">
-
-            </p>
         </div>
+        <div id="d1_right">
+            <div id="f1">
+                <h2 class="header">Badminton</h2>
+                <img src="../images/frame.png" class="frame" id="p1">
+                <p class="bodyText">
+                    Jag spelar badminton för att hålla mig aktiv och frisk. Det är en rolig sport som hjälper mig att
+                    träna min kropp och förbättra min koordination. Genom att spela badminton får jag också en chans att
+                    umgås med vänner och ha kul. Det ger mig energi och gör mig glad, vilket är viktigt för mitt
+                    välbefinnande. Dessutom tycker jag om att utmana mig själv och förbättra mina färdigheter på banan.
+                </p>
+
+            </div>
+
+            <div id="f2">
+                <h2 class="header">Lugn i Läsning och Skrivande</h2>
+                <img src="../images/frame.png" class="frame" id="p2">
+                <p class="bodyText">
+                    Jag har ett stort intresse för att läsa, särskilt vetenskapliga och historiska böcker som ger mig ny
+                    kunskap och insikter. Läsning är ett sätt för mig att utforska världen och förstå olika ämnen på
+                    djupet. Utöver detta älskar jag att skriva romantiska berättelser. Det är en kreativ process som
+                    hjälper mig att slappna av och uttrycka känslor genom mina karaktärer och deras världar. Att skriva
+                    romantik ger mig en känsla av lugn och tillfredsställelse, och det är något jag verkligen brinner
+                    för på min fritid.
+                </p>
+
+            </div>
+
+            <div id="f3">
+                <h2 class="header">Gokart</h2>
+                <img src="../images/frame.png" class="frame" id="p3">
+                <p class="bodyText">
+                    Jag deltar i gokart-racing för att det är en spännande och adrenalinfylld aktivitet som ger mig en
+                    chans att utmana mig själv. Att köra gokart ger mig en känsla av frihet och kontroll när jag
+                    manövrerar genom kurvorna och pressar på gaspedalen. Jag älskar att tävla mot andra och se hur jag
+                    kan förbättra mina körfärdigheter. Dessutom är gokart en social aktivitet där jag får träffa andra
+                    som delar samma intresse, vilket gör det ännu roligare. Sammanfattningsvis ger gokart-racing mig
+                    både spänning och gemenskap.
+                </p>
+
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 
