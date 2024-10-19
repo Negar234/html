@@ -2,205 +2,10 @@
 
 <head>
     <link rel="icon" type="image/x-icon" href="../images/negar-logo.png" sizes="32*32">
-    <style>
-        body {
-            font-family: arial;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            height: 40px;
-            overflow: hidden;
-            float: left;
-        }
-
-        li {
-            float: left;
-            border-right: 1px solid #bbb;
-        }
-
-        li:last-child {
-            border-right: none;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        .active {
-            background-color: #00AF66;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #111;
-        }
-
-        #container div div {
-            width: 100%;
-            height: 200px;
-            margin-top: 10px;
-            float: down;
-        }
-
-        #d1_left {
-            background-image: url('../images/hobby.png');
-            background-size: 100% 100%;
-            height: 500px !important;
-        }
-
-        #d1_left .title {
-            height: 50px;
-            margin: 0 auto 0;
-            background-color: #BEC8FF;
-            width: 900px;
-            border-radius: 20px;
-            top: 220px;
-            position: relative;
-            text-align: center;
-            color: purple;
-            font-weight: bold;
-            font-size: 34pt;
-        }
-
-        #d1_right {
-            margin: 0 auto 0;
-            width: 90% !important;
-        }
-
-        #d2_right {
-            background-color: cadetblue;
-        }
-
-        #d2_left {
-            background-color: chocolate;
-        }
-
-        .frame {
-            width: 400px;
-            height: 279px;
-
-        }
-
-
-        #p1 {
-            background-image: url('../images/badminton.jpg');
-
-        }
-
-        #p2 {
-            background-image: url('../images/bok.jpg');
-
-        }
-
-        #p3 {
-            background-image: url('../images/go kart.jpg');
-
-        }
-
-        #d1_right div img.frame {
-            background-size: 330px 210px;
-            background-position: center center;
-            background-repeat: no-repeat;
-        }
-
-        #d1_right div:first-child {
-
-            margin-left: 0px;
-        }
-
-        #d1_right div {
-            width: auto !important;
-            height: auto !important;
-            float: left;
-            margin-left: 0.5%;
-
-        }
-
-        #d1_right div h2.header {
-
-
-            height: 30px !important;
-            text-align: center;
-            width: 70% !important;
-
-            border-left: none !important;
-            display: block;
-            padding: 10px;
-
-            left: 10px;
-            position: relative;
-        }
-
-        #d1_right #f1 h2.header {
-            background-color: #79d15b;
-            outline: 10px solid #1f5c2a;
-            border: 5px dashed rgb(85, 135, 77);
-            color: rgb(13, 1, 1);
-
-        }
-
-        #d1_right #f2 h2.header {
-            background-color: #afa558;
-            outline: 10px solid #8b700f;
-            border: 5px dashed rgb(76, 64, 3);
-            color: rgb(13, 1, 1);
-        }
-
-        #d1_right #f3 h2.header {
-            background-color: rgb(99, 170, 228);
-            outline: 10px solid rgb(12, 61, 90);
-            border: 5px dashed rgb(33, 104, 133);
-            color: rgb(13, 1, 1);
-        }
-
-        #d1_right div p.bodyText {
-            padding: 20px;
-        }
-
-        #f1 {
-            background-color: rgb(163, 214, 190);
-        }
-
-        #f2 {
-            background-color: rgb(212, 205, 166);
-        }
-
-        #f3 {
-            background-color: rgb(191, 228, 232);
-        }
-
-        #logoContainer img {
-            width: 60px;
-            height: 60px;
-            left: 65%;
-            top: -10px;
-            position: relative;
-            animation: logoAnimation 7s;
-            animation-iteration-count: infinite;
-        }
-
-        @keyframes logoAnimation {
-            from {}
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        #navigator_bar {
-            background-color: #333;
-            height: 40px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="Fritidsintressen.css">
 </head>
 
-<body>
+<body onload="setMyTimer()">
     <div id="navigator_bar">
         <ul>
             <li><a href="../index.html" title="Hem">Hem</a></li>
@@ -223,7 +28,7 @@
         </div>
         <div id="d1_right">
             <div id="f1">
-                <h2 class="header">Badminton</h2>
+                <h2 class="header" onclick="showPanel(this)">Badminton</h2>
                 <img src="../images/frame.png" class="frame" id="p1">
                 <p class="bodyText">
                     Jag spelar badminton för att hålla mig aktiv och frisk. Det är en rolig sport som hjälper mig att
@@ -235,7 +40,7 @@
             </div>
 
             <div id="f2">
-                <h2 class="header">Lugn i Läsning och Skrivande</h2>
+                <h2 class="header" onclick="showPanel(this)">Böcker</h2>
                 <img src="../images/frame.png" class="frame" id="p2">
                 <p class="bodyText">
                     Jag har ett stort intresse för att läsa, särskilt vetenskapliga och historiska böcker som ger mig ny
@@ -249,7 +54,7 @@
             </div>
 
             <div id="f3">
-                <h2 class="header">Gokart</h2>
+                <h2 class="header" onclick="showPanel(this)">Gokart</h2>
                 <img src="../images/frame.png" class="frame" id="p3">
                 <p class="bodyText">
                     Jag deltar i gokart-racing för att det är en spännande och adrenalinfylld aktivitet som ger mig en
@@ -264,6 +69,8 @@
         </div>
     </div>
     </div>
+
+    <script src="Fritidsintressen.js"></script>
 </body>
 
 </html>
