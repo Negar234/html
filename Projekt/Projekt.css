@@ -35,13 +35,6 @@ li a:hover:not(.active) {
     background-color: #111;
 }
 
-#container div div {
-    width: 100%;
-    height: 200px;
-    margin-top: 10px;
-    float: left;
-}
-
 #d1_left {
     background-color: rgb(241, 192, 142);
     font-weight: bold;
@@ -56,7 +49,7 @@ li a:hover:not(.active) {
 
 #d1 h1.header {
 
-    height: 100px;
+    /* height: 100px;*/
     margin: 0 auto 0;
     background-color: #befff6;
     position: relative;
@@ -68,7 +61,7 @@ li a:hover:not(.active) {
 
 #d1 p.header {
 
-    height: 100px;
+    /* height: 100px;*/
     margin: 0 auto 0;
     background-color: #f4ffbe;
     position: relative;
@@ -80,7 +73,7 @@ li a:hover:not(.active) {
 
 #d1 div.header {
 
-    height: 400px;
+    /* height: 400px;*/
 
     margin: 10px;
     background-color: #f6ffbe;
@@ -94,6 +87,7 @@ li a:hover:not(.active) {
 #d1 div.header2 {
 
     height: 50px;
+
     margin: 10px;
     background-color: #f0c2db;
     position: relative;
@@ -124,4 +118,59 @@ li a:hover:not(.active) {
 #navigator_bar {
     background-color: #333;
     height: 40px;
+}
+
+.skillHeader {
+    width: 98%;
+    background-color: rgb(244, 204, 233);
+    color: rgb(31, 10, 75);
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-left: 2%;
+}
+
+.skillBody {
+    width: 98%;
+    height: 200px;
+    background-color: rgb(202, 241, 185);
+    color: navy;
+    padding-left: 2%;
+
+}
+
+.skill {
+    width: 100%;
+    height: 240px;
+}
+
+@media screen and (min-width : 800px) {
+    .skill {
+        width: 32%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        float: left;
+
+    }
+
+    #imgContainer img {
+        width: 32% !important;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        height: 300px;
+    }
+}
+
+#imgContainer img {
+    width: 100%;
+    height: 300px
+}
+
+#imgContainer {
+    top: 30px;
+    position: relative;
+    height: 300px !important;
+    clear: left;
 }

@@ -72,7 +72,7 @@ li a:hover:not(.active) {
     width: 150px;
     height: 150px;
     left: 85%;
-    top: 30px;
+    top: -30px;
     position: relative;
     animation: logoAnimation 7s;
     animation-iteration-count: infinite;
@@ -105,4 +105,156 @@ li a:hover:not(.active) {
     padding-top: 15px;
     height: 50px;
     width: 100%;
+}
+
+#top p img {
+    /* width : 100%;*/
+    height: 300px;
+}
+
+@media screen and (min-width:600px) {
+    #top p img:first-child {
+        width: 58% !important;
+
+    }
+
+    #top p img:last-child {
+        width: 40% !important;
+    }
+
+
+    #rollingPicsContainer {
+
+        position: absolute;
+        width: 100%;
+        height: 240px;
+        position: relative;
+        top: -50px;
+
+
+    }
+
+    #rollingPicsContainer img {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        float: right;
+        margin-right: 20px;
+
+    }
+
+    #tabDiv {
+        width: 100px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        transform: rotate(90deg);
+        background-color: rgb(207, 178, 90);
+        height: 30px;
+        padding-top: 15px;
+        text-align: center;
+        position: relative;
+        left: 975px;
+        top: 130px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    @keyframes a2 {
+        from {
+            left: -1050px;
+        }
+
+        to {
+            left: 1000px;
+        }
+    }
+
+    #newPanel {
+
+        background-color: rgb(173, 152, 77);
+        position: absolute;
+        left: -1000px;
+        top: 100px;
+        width: 1000px;
+        height: 240px;
+        z-index: 10;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    #top p img:first-child {
+        width: 100% !important;
+    }
+
+    #top p img:last-child {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #rollingPicsContainer {
+        /* display : none;*/
+        position: absolute;
+        width: 100%;
+        height: 240px;
+        position: relative;
+        top: -50px;
+        /*left : -1000px;
+     top : 100px;
+     width : 1000px;
+     height : 240px;
+     z-index : 10;
+     background-color: #00AF66;*/
+
+    }
+
+    #rollingPicsContainer img {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        float: right;
+        margin-right: 20px;
+        transform: rotate(-90deg);
+    }
+
+    #tabDiv {
+        width: 100px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        transform: rotate(270deg);
+        background-color: blueviolet;
+        height: 30px;
+        padding-top: 15px;
+        text-align: center;
+        position: relative;
+        left: 975px;
+        top: 130px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    @keyframes a1 {
+        from {
+            left: -1050px;
+        }
+
+        to {
+            left: 1000px;
+        }
+    }
+
+    #newPanel {
+        left: -100px;
+        background-color: darkolivegreen;
+        position: absolute;
+        /*left : -1000px;*/
+        top: -620px;
+        width: 1000px;
+        height: 240px;
+        z-index: 10;
+        transform: rotate(90deg)
+    }
 }
