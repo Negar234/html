@@ -53,7 +53,7 @@ li a:hover:not(.active) {
     height: 50px;
     margin: 0 auto 0;
     background-color: #BEC8FF;
-    width: 900px;
+    width: 90%;
     border-radius: 20px;
     top: 220px;
     position: relative;
@@ -192,7 +192,7 @@ li a:hover:not(.active) {
 #logoContainer img {
     width: 60px;
     height: 60px;
-    left: 65%;
+    left: 5%;
     top: -10px;
     position: relative;
     animation: logoAnimation 7s;

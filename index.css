@@ -41,7 +41,7 @@ li a:hover:not(.active) {
     background-color: bisque;
     float: left;
     padding-top: 20px;
-    padding-left: 5%;
+    /*padding-left: 5%;*/
 }
 
 #top_right {
@@ -71,7 +71,7 @@ li a:hover:not(.active) {
 #logoContainer img {
     width: 150px;
     height: 150px;
-    left: 85%;
+    left: 75%;
     top: -30px;
     position: relative;
     animation: logoAnimation 7s;
@@ -93,7 +93,7 @@ li a:hover:not(.active) {
 
 #timer {
     position: absolute;
-    left: 1000px;
+    left: 80%;
     top: 18px;
     color: white;
 }
@@ -231,7 +231,7 @@ li a:hover:not(.active) {
         text-align: center;
         position: relative;
         left: 975px;
-        top: 130px;
+        top: 20px;
         cursor: pointer;
         z-index: 10;
     }
@@ -247,7 +247,7 @@ li a:hover:not(.active) {
     }
 
     #newPanel {
-        left: -100px;
+        left: -120px;
         background-color: darkolivegreen;
         position: absolute;
         /*left : -1000px;*/
@@ -256,5 +256,12 @@ li a:hover:not(.active) {
         height: 240px;
         z-index: 10;
         transform: rotate(90deg)
+    }
+
+    #timer {
+        position: absolute;
+        left: 27%;
+        top: 350px;
+        color: white;
     }
 }

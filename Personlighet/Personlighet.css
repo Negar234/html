@@ -187,3 +187,9 @@ li a:hover:not(.active) {
     cursor: pointer;
     font-weight: bold !important;
 }
+
+@media screen and (max-width:600px) {
+    .res_panel {
+        width: 100% !important;
+    }
+}
